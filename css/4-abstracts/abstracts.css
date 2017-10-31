@@ -15,4 +15,9 @@
   justify-content: center;
   align-items: center; }
 
+.hover-zoom {
+  width: 130px;
+  height: 130px;
+  transition: ease 400ms; }
+
 /*# sourceMappingURL=abstracts.css.map */

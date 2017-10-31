@@ -1,0 +1,86 @@
+.options {
+  width: 700px;
+  display: flex;
+  justify-content: space-between;
+    div {
+      flex-grow: 1;
+    }
+}
+
+.title-img {
+  display: flex;
+  padding: 10px;
+  // align-items: stretch;
+    img {
+      margin-top: -13px;
+    }
+}
+
+.schedule, .contact {
+  padding: 10px;
+}
+
+.relative-inline {
+  position: relative;
+  display: inline-block;
+}
+
+.color-radius {
+  background-color: $dark-grey;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+
+.destinations {
+  @extend .relative-inline;
+    &:hover {
+      @extend .color-radius;
+      #destinations {
+        display: block;
+      }
+    }
+}
+
+.activities {
+  @extend .relative-inline;
+    &:hover {
+      @extend .color-radius;
+      #activities {
+        display: block;
+      }
+    }
+}
+
+.planning {
+  @extend .relative-inline;
+    &:hover {
+      @extend .color-radius;
+      #planning {
+        display: block;
+      }
+    }
+}
+
+.about {
+  @extend .relative-inline;
+    &:hover {
+      @extend .color-radius;
+      #about {
+        display: block;
+      }
+    }
+}
+
+#destinations, #activities, #planning, #about {
+  background-color: $dark-grey;
+  color: $grey;
+  display: none;
+  position: absolute;
+    p {
+      padding: 8px;
+      border-bottom: 1px solid grey;
+      font-size: 16px;
+      letter-spacing: 0;
+      font-family: 'Open Sans', sans-serif;
+    }
+}

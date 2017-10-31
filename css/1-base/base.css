@@ -1,7 +1,9 @@
+@import url("https://fonts.googleapis.com/css?family=Fjalla+One|Open+Sans");
 body {
   background-color: aquamarine;
   box-sizing: border-box;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  font-family: 'Fjalla One', sans-serif; }
 
 /*# sourceMappingURL=base.css.map */

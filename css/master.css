@@ -1,8 +1,32 @@
+@import url("https://fonts.googleapis.com/css?family=Fjalla+One|Open+Sans");
+.justify-center, .play-button, .nav-bar-2 .search, .hero {
+  justify-content: center;
+  display: flex; }
+
+.justify-between, .nav-bar-1, ul {
+  justify-content: space-between;
+  display: flex; }
+
+.img-back-center, .raft, .camp, .backpacking, .custom, .photography, .canoe {
+  background-position: center;
+  background-size: cover; }
+
+.center-center, .large-pic, .small-pic, .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.hover-zoom, .pic:hover .icon, .play-button:hover {
+  width: 130px;
+  height: 130px;
+  transition: ease 400ms; }
+
 body {
   background-color: aquamarine;
   box-sizing: border-box;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  font-family: 'Fjalla One', sans-serif; }
 
 .gallery .row:last-child {
   flex-direction: row-reverse; }
@@ -27,7 +51,8 @@ body {
   color: white;
   font-weight: bold;
   top: 80%;
-  left: 10%; }
+  left: 10%;
+  font-size: 21px; }
 
 .raft {
   background-image: url(../img/home-raft.jpg); }
@@ -47,13 +72,58 @@ body {
 .canoe {
   background-image: url(../img/home-canoe.jpg); }
 
-.pic:hover .icon {
-  width: 130px;
-  height: 130px;
-  transition: ease 400ms; }
 .pic:hover img {
   width: 50px;
   transition: ease 400ms; }
+
+.options {
+  width: 700px;
+  display: flex;
+  justify-content: space-between; }
+  .options div {
+    flex-grow: 1; }
+
+.title-img {
+  display: flex;
+  padding: 10px; }
+  .title-img img {
+    margin-top: -13px; }
+
+.schedule, .contact {
+  padding: 10px; }
+
+.relative-inline, .destinations, .activities, .planning, .about {
+  position: relative;
+  display: inline-block; }
+
+.color-radius, .destinations:hover, .activities:hover, .planning:hover, .about:hover {
+  background-color: #444444;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px; }
+
+.destinations:hover #destinations {
+  display: block; }
+
+.activities:hover #activities {
+  display: block; }
+
+.planning:hover #planning {
+  display: block; }
+
+.about:hover #about {
+  display: block; }
+
+#destinations, #activities, #planning, #about {
+  background-color: #444444;
+  color: #BDBDA6;
+  display: none;
+  position: absolute; }
+  #destinations p, #activities p, #planning p, #about p {
+    padding: 8px;
+    border-bottom: 1px solid grey;
+    font-size: 16px;
+    letter-spacing: 0;
+    font-family: 'Open Sans', sans-serif; }
 
 .play-button {
   border-radius: 100%;
@@ -65,8 +135,15 @@ body {
     margin-left: 10px;
     width: 30px; }
 
+.play-button:hover {
+  background-color: rgba(255, 255, 255, 0.7); }
+  .play-button:hover img {
+    transition: ease 400ms;
+    width: 40px; }
+
 .explore-button {
-  background-color: orange;
+  background-color: #DA7732;
+  letter-spacing: 2px;
   color: white;
   padding: 10px 20px;
   position: relative; }
@@ -75,21 +152,38 @@ body {
     top: 100%;
     left: 39%; }
 
-.nav-bar-2 {
+.container-2 {
   background-image: url("../img/bg-categorynav.jpg");
   background-repeat: repeat;
-  padding: 15px;
+  border: 1px solid black;
+  width: 100vw;
   display: flex;
-  justify-content: space-around;
-  color: white; }
+  justify-content: center; }
+
+.nav-bar-2 {
+  width: 1110px;
+  padding: 13px;
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Open Sans', sans-serif;
+  color: #BDBDA6; }
+  .nav-bar-2 li {
+    font-size: 16px;
+    letter-spacing: 0; }
+  .nav-bar-2 li:first-child {
+    color: white; }
   .nav-bar-2 li:last-child {
     border-left: 1px solid lightgrey;
     padding-left: 20px;
-    color: orange; }
+    color: #DA7732; }
   .nav-bar-2 .search {
-    background-color: transparent; }
+    background-color: transparent;
+    font-weight: 800;
+    align-items: center; }
     .nav-bar-2 .search img {
-      margin-left: 15px; }
+      margin-left: 15px;
+      height: 40px;
+      width: 20px; }
 
 .icon {
   width: 100px;
@@ -102,24 +196,13 @@ body {
 .orange-line {
   width: 40px;
   height: 5px;
-  background-color: orange; }
+  background-color: #DA7732; }
 
-.justify-center, .play-button, .nav-bar-2 .search, .hero {
-  justify-content: center;
-  display: flex; }
-
-.justify-between, .nav-bar-1, ul {
-  justify-content: space-between;
-  display: flex; }
-
-.img-back-center, .raft, .camp, .backpacking, .custom, .photography, .canoe {
-  background-position: center;
-  background-size: cover; }
-
-.center-center, .large-pic, .small-pic, .icon {
-  display: flex;
-  justify-content: center;
-  align-items: center; }
+.white-line {
+  width: 300px;
+  height: 5px;
+  background: white;
+  margin-bottom: 30px; }
 
 .hero {
   background-image: url(../img/hero.jpg);
@@ -137,11 +220,25 @@ body {
 
 .nav-bar-1 {
   width: 1000px;
-  color: white; }
+  color: white;
+  align-items: flex-start; }
+  .nav-bar-1 p {
+    padding-top: 0px;
+    margin-top: 0px;
+    letter-spacing: 2px; }
+
+.logo {
+  font-size: 20px;
+  font-family: freight; }
 
 li {
   list-style-type: none;
-  margin-left: 25px; }
+  margin-left: 25px;
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  letter-spacing: 2px;
+  align-self: flex-start; }
 
 .title {
   display: flex;
@@ -154,6 +251,8 @@ li {
   .title p:nth-child(2) {
     font-size: 25px; }
   .title p:nth-child(3) {
-    font-size: 100px; }
+    font-size: 120px;
+    font-family: freight;
+    font-weight: 400; }
 
 /*# sourceMappingURL=master.css.map */

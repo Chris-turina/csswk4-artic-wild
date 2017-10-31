@@ -1,21 +1,21 @@
 /*
-Error: Undefined variable: "$orange".
-        on line 24 of scss/3-components/components.scss
+Error: Undefined variable: "$dark-grey".
+        on line 29 of scss/2-layout/hover.scss
 
-19:       width: 40px;
-20:     }
-21: }
-22: 
-23: .explore-button {
-24:   background-color: $orange;
-25:   letter-spacing: 2px;
-26:   color: white;
-27:   padding: 10px 20px;
-28:   position: relative;
-29:   img {
+24:   position: relative;
+25:   display: inline-block;
+26: }
+27: 
+28: .color-radius {
+29:   background-color: $dark-grey;
+30:   border-top-left-radius: 3px;
+31:   border-top-right-radius: 3px;
+32: }
+33: 
+34: .destinations {
 
 Backtrace:
-scss/3-components/components.scss:24
+scss/2-layout/hover.scss:29
 /usr/local/lib/ruby/gems/2.4.0/gems/sass-3.4.23/lib/sass/script/tree/variable.rb:49:in `_perform'
 /usr/local/lib/ruby/gems/2.4.0/gems/sass-3.4.23/lib/sass/script/tree/node.rb:58:in `perform'
 /usr/local/lib/ruby/gems/2.4.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:397:in `visit_prop'
@@ -66,4 +66,4 @@ scss/3-components/components.scss:24
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$orange\".\A         on line 24 of scss/3-components/components.scss\A \A 19:       width: 40px;\A 20:     }\A 21: }\A 22: \A 23: .explore-button {\A 24:   background-color: $orange;\A 25:   letter-spacing: 2px;\A 26:   color: white;\A 27:   padding: 10px 20px;\A 28:   position: relative;\A 29:   img {"; }
+  content: "Error: Undefined variable: \"$dark-grey\".\A         on line 29 of scss/2-layout/hover.scss\A \A 24:   position: relative;\A 25:   display: inline-block;\A 26: }\A 27: \A 28: .color-radius {\A 29:   background-color: $dark-grey;\A 30:   border-top-left-radius: 3px;\A 31:   border-top-right-radius: 3px;\A 32: }\A 33: \A 34: .destinations {"; }
