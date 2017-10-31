@@ -13,6 +13,7 @@
 
 .play-button:hover {
   @extend .hover-zoom;
+  cursor: pointer;
   background-color: rgba(255,255,255,0.7);
     img {
       transition: ease 400ms;
@@ -30,6 +31,9 @@
     position: absolute;
     top: 100%;
     left: 39%;
+  }
+  &:hover {
+    cursor: pointer;
   }
 }
 

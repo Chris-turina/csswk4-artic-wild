@@ -1,24 +1,35 @@
 /*
-Error: Undefined variable: "$dark-grey".
-        on line 29 of scss/2-layout/hover.scss
+Error: Undefined variable: "$orange".
+        on line 22 of scss/2-layout/hover.scss
 
-24:   position: relative;
-25:   display: inline-block;
-26: }
-27: 
-28: .color-radius {
-29:   background-color: $dark-grey;
-30:   border-top-left-radius: 3px;
-31:   border-top-right-radius: 3px;
-32: }
-33: 
-34: .destinations {
+17: }
+18: 
+19: .schedule, .contact {
+20:   padding: 10px;
+21:   &:hover {
+22:     color: $orange;
+23:     cursor: pointer;
+24:   }
+25: }
+26: 
+27: .relative-inline {
 
 Backtrace:
-scss/2-layout/hover.scss:29
+scss/2-layout/hover.scss:22
 /usr/local/lib/ruby/gems/2.4.0/gems/sass-3.4.23/lib/sass/script/tree/variable.rb:49:in `_perform'
 /usr/local/lib/ruby/gems/2.4.0/gems/sass-3.4.23/lib/sass/script/tree/node.rb:58:in `perform'
 /usr/local/lib/ruby/gems/2.4.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:397:in `visit_prop'
+/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
+/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
+/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.4.23/lib/sass/stack.rb:79:in `block in with_base'
+/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
+/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.4.23/lib/sass/stack.rb:79:in `with_base'
+/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `visit'
+/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:433:in `block (2 levels) in visit_rule'
+/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:433:in `map'
+/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:433:in `block in visit_rule'
+/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
+/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:431:in `visit_rule'
 /usr/local/lib/ruby/gems/2.4.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
 /usr/local/lib/ruby/gems/2.4.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
 /usr/local/lib/ruby/gems/2.4.0/gems/sass-3.4.23/lib/sass/stack.rb:79:in `block in with_base'
@@ -66,4 +77,4 @@ scss/2-layout/hover.scss:29
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$dark-grey\".\A         on line 29 of scss/2-layout/hover.scss\A \A 24:   position: relative;\A 25:   display: inline-block;\A 26: }\A 27: \A 28: .color-radius {\A 29:   background-color: $dark-grey;\A 30:   border-top-left-radius: 3px;\A 31:   border-top-right-radius: 3px;\A 32: }\A 33: \A 34: .destinations {"; }
+  content: "Error: Undefined variable: \"$orange\".\A         on line 22 of scss/2-layout/hover.scss\A \A 17: }\A 18: \A 19: .schedule, .contact {\A 20:   padding: 10px;\A 21:   &:hover {\A 22:     color: $orange;\A 23:     cursor: pointer;\A 24:   }\A 25: }\A 26: \A 27: .relative-inline {"; }

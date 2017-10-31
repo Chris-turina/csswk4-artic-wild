@@ -29,6 +29,7 @@
 }
 
 .pic:hover {
+  cursor: pointer;
   .icon {
     @extend .hover-zoom;
   }

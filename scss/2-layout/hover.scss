@@ -18,6 +18,10 @@
 
 .schedule, .contact {
   padding: 10px;
+  &:hover {
+    color: $orange;
+    cursor: pointer;
+  }
 }
 
 .relative-inline {
@@ -29,6 +33,7 @@
   background-color: $dark-grey;
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
+  cursor: pointer;
 }
 
 .destinations {
@@ -82,5 +87,27 @@
       font-size: 16px;
       letter-spacing: 0;
       font-family: 'Open Sans', sans-serif;
+      cursor: pointer;
+      &:hover {
+        color: white;
+      }
     }
+}
+
+.nav-bar-2 {
+  li:hover {
+    color: white;
+    cursor: pointer;
+  }
+  li:first-child:hover {
+    color: $orange;
+    cursor: pointer;
+  }
+}
+
+.search {
+  p:hover {
+    color: white;
+    cursor: pointer;
+  }
 }
