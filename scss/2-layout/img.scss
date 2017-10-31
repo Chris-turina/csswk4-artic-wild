@@ -1,0 +1,41 @@
+.raft {
+  background-image: url(../img/home-raft.jpg);
+  @extend .img-back-center;
+}
+
+.camp {
+  background-image: url(../img/home-basecamp.jpg);
+  @extend .img-back-center;
+}
+
+.backpacking {
+  background-image: url(../img/home-backpacking.jpg);
+  @extend .img-back-center;
+}
+
+.custom {
+  background-image: url(../img/home-custom.jpg);
+  @extend .img-back-center;
+}
+
+.photography {
+  background-image: url(../img/home-photo.jpg);
+  @extend .img-back-center;
+}
+
+.canoe {
+  background-image: url(../img/home-canoe.jpg);
+  @extend .img-back-center;
+}
+
+.pic:hover {
+  .icon {
+    width: 130px;
+    height: 130px;
+    transition: ease 400ms;
+  }
+  img {
+    width: 50px;
+    transition: ease 400ms;
+  }
+}

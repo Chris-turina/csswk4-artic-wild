@@ -1,0 +1,63 @@
+.play-button {
+  border-radius: 100%;
+  background-color: rgba(255,255,255,0.5);
+  width: 100px;
+  height: 100px;
+  @extend .justify-center;
+  align-items: center;
+    img {
+      margin-left: 10px;
+      width: 30px;
+    }
+}
+
+.explore-button {
+  background-color: orange;
+  color: white;
+  padding: 10px 20px;
+  position: relative;
+  img {
+    position: absolute;
+    top: 100%;
+    left: 39%;
+  }
+}
+
+.nav-bar-2 {
+  background-image: url("../img/bg-categorynav.jpg");
+  background-repeat: repeat;
+  padding: 15px;
+  display: flex;
+  justify-content: space-around;
+  color: white;
+    li:last-child {
+      border-left: 1px solid lightgrey;
+      padding-left: 20px;
+      color: orange;
+    }
+    .search {
+      background-color: rgba(0,0,0,0);
+      @extend .justify-center;
+        img {
+          margin-left: 15px;
+        }
+    }
+
+}
+
+.icon {
+  width: 100px;
+  height: 100px;
+  background-color: rgba(0,0,0,0.50);
+  border-radius: 100%;
+  @extend .center-center;
+    img {
+      width: 40px;
+    }
+}
+
+.orange-line {
+  width: 40px;
+  height: 5px;
+  background-color: orange;
+}

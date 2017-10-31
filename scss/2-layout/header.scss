@@ -1,0 +1,48 @@
+.hero {
+  background-image: url(../img/hero.jpg);
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+  background-repeat: no-repeat;
+  @extend .justify-center;
+}
+
+.container {
+  width: 1150px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nav-bar-1 {
+  width: 1000px;
+  color: white;
+  @extend .justify-between;
+}
+
+ul {
+  @extend .justify-between;
+}
+
+li {
+  list-style-type: none;
+  margin-left: 25px;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+    p {
+      padding: 0;
+      margin: 0;
+    }
+    p:nth-child(2) {
+      font-size: 25px;
+    }
+    p:nth-child(3) {
+      font-size: 100px;
+    }
+}

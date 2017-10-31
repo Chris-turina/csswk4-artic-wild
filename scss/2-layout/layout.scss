@@ -1,0 +1,33 @@
+.gallery {
+  .row:last-child {
+    flex-direction: row-reverse;
+  }
+}
+
+.row {
+  display: flex;
+  width: 100vw;
+  height: 420px;
+}
+
+.large-pic {
+  width: 50%;
+  height: 100%;
+  @extend .center-center;
+  position: relative;
+}
+
+.small-pic {
+  width: 25%;
+  height: 100%;
+  @extend .center-center;
+  position: relative;
+}
+
+.gallery-text {
+  position: absolute;
+  color: white;
+  font-weight: bold;
+  top: 80%;
+  left: 10%;
+}

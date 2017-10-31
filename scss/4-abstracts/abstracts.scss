@@ -1,0 +1,20 @@
+.justify-center {
+  justify-content: center;
+  display: flex;
+}
+
+.justify-between {
+  justify-content: space-between;
+  display: flex;
+}
+
+.img-back-center {
+  background-position: center;
+  background-size: cover;
+}
+
+.center-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
